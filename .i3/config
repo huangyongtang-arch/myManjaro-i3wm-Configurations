@@ -60,8 +60,9 @@ exec --no-startup-id sslocal -c ~/app/ss/conf/ss.json --log-file ~/app/ss/logs/s
 exec_always --no-startup-id variety
 exec_always --no-startup-id compton
 exec_always --no-startup-id qv2ray
-exec_always --no-startup-id flamehot
+exec_always --no-startup-id flameshot
 exec_always --no-startup-id redshift
+exec_always --no-startup-id yakuake
 ################################################################################################
 
 # Screen brightness controls
@@ -72,7 +73,7 @@ exec_always --no-startup-id redshift
 #bindsym $mod+Ctrl+b exec terminal -e 'bmenu'
 bindsym $mod+Ctrl+b exec alacritty -e 'bmenu'
 bindsym $mod+F2 exec --no-startup-id chromium
-
+bindsym $mod+F1 exec --no-startup-id firefox
 
 bindsym $mod+Control+p exec flameshot gui
 #bindsym $mod+Control+l exec "redshift -c ~/.config/redshift/redshift.conf"
@@ -90,9 +91,7 @@ bindsym $mod+Print --release exec --no-startup-id i3-scrot -w
 bindsym $mod+Shift+Print --release exec --no-startup-id i3-scrot -s
 bindsym $mod+Shift+h exec xdg-open /usr/share/doc/manjaro/i3_help.pdf
 bindsym $mod+Ctrl+x --release exec --no-startup-id xkill
-
-# focus_follows_mouse no
-
+bindsym $mod+F4 exec --no-startup-id typora
 # change focus
 bindsym $mod+j focus left
 bindsym $mod+k focus down
@@ -210,17 +209,20 @@ bindsym $mod+Shift+8 move container to workspace $ws8; workspace $ws8
 # Open applications on specific workspaces
 # assign [class="Thunderbird"] $ws1
 # assign [class="Pale moon"] $ws2
-# assign [class="Pcmanfm"] $ws3
+assign [class="Pcmanfm"] $ws6
 # assign [class="Skype"] $ws5
 assign [class="TelegramDesktop"] $ws8
+assign [class="electronic-wechat"] $ws8
+
 assign [class="firefox"] $ws1
-#assign [class="chrominum"] $ws1
+assign [class="chrominum"] $ws1
+assign [class="typora"] $ws7
 # assign [class="Google-chrome"] $ws3
 #assign [class="netease-cloud-music"] $ws4
-# assign [class="jetbrains-clion"] $ws2
+assign [class="jetbrains-clion"] $ws2
 # assign [class="Emacs"] $ws2
 # assign [class="Epdfview"] $ws7
-# assign [class="Alacritty"] $ws1
+assign [class="Alacritty"] $ws5
 
 # Open specific applications in floating mode
 for_window [title="alsamixer"] floating enable border pixel 1
@@ -369,7 +371,7 @@ bar {
 
 	bindsym button4 nop
 	bindsym button5 nop
-   font xft:URWGothic-Book 14
+   font xft:URWGothic-Book 12
 #	strip_workspace_numbers yes
 
     colors {
