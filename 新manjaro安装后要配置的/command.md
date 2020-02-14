@@ -69,7 +69,7 @@ export XMODIFIERS="@im=fcitx"
 ```
 sudo pacman -Sy yaourt yay
 sudo pacman -S archlinuxcn-keyring
-sudo pacman -S wiznote qtcreator visual-studio-code-bin make deepin.com.qq.office clang go electronic-wechat-git gbd flameshot google-chrome firefox dbeaver lightdm redshift deepin gnome alacritty compton variety rofi audacious teamviewer vlc vmware-workstation baidunetdisk telegram-desktop gimp anki filezilla foxit ranger zookeeper docker npm redis redis-desktop-manager nginx php tomcat8 apache maven simplescreenrecorder qv2ray v2ray tmux timeshift wechat-devtools wine
+sudo pacman -S wiznote qtcreator visual-studio-code-bin make deepin.com.qq.office clang go electronic-wechat-git gbd flameshot google-chrome firefox dbeaver lightdm redshift deepin gnome alacritty compton variety rofi audacious teamviewer vlc vmware-workstation baidunetdisk telegram-desktop gimp anki filezilla foxit ranger zookeeper docker npm redis redis-desktop-manager nginx php tomcat8 apache maven simplescreenrecorder qv2ray v2ray tmux timeshift wechat-devtools wine polybar rxvt-unicode alsa-utils mate-power-manager
 yay -Sy netease-cloud-music typora postman obs-Studio 
 
 sudo pacman -S wps-office-cn
@@ -78,8 +78,7 @@ sudo pacman -S ttf-wps-fonts
 #设置代理
 google-chrome --proxy-server=...
 
-
-sudo pacman -S ttf-roboto noto-fonts ttf-dejavu
+sudo pacman -S ttf-roboto noto-fonts ttf-dejavu nerd-fonts-complete
 # 文泉驿
 sudo pacman -S wqy-bitmapfont wqy-microhei wqy-microhei-lite wqy-zenhei
 # 思源字体
@@ -88,6 +87,7 @@ sudo pacman -S adobe-source-sans-pro-fonts
 sudo pacman -S adobe-source-serif-pro-fonts
 sudo pacman -S adobe-source-han-sans-cn-fonts   
 sudo pacman -S adobe-source-han-serif-cn-fonts  
+sudo pacman -S font-awesome-5
 sodu fc-cache -fv 生成字体缓存
 
 ```
