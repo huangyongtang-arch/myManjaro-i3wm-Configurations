@@ -1,0 +1,14 @@
+[Desktop Entry]
+Name[zh_CN]=待办事项
+Name=To Do
+Comment[zh_CN]=管理您的个人任务
+Comment=Manage your personal tasks
+Exec=gnome-todo
+Icon=org.gnome.Todo
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=GNOME;GTK;Utility;
+Keywords=Task;Productivity;Todo;
+DBusActivatable=true
+X-XFCE-Source=file:///usr/share/applications/org.gnome.Todo.desktop

@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Name[zh_CN]=字符
+Name=Characters
+Comment[zh_CN]=查找和插入特殊字符的实用程序
+Comment=Utility application to find and insert unusual characters
+Icon=org.gnome.Characters
+Exec=/usr/bin/gnome-characters
+DBusActivatable=true
+StartupNotify=true
+Categories=GNOME;GTK;Utility;X-GNOME-Utilities;
+Keywords[zh_CN]=characters;unicode;punctuation;math;letters;emoji;emoticon;字符;统一码;标点符号;表情;字母;公式;数学;音标;
+Keywords=characters;unicode;punctuation;math;letters;emoji;emoticon;
+X-XFCE-Source=file:///usr/share/applications/org.gnome.Characters.desktop

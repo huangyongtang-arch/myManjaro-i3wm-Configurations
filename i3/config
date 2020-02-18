@@ -1,20 +1,20 @@
 set $mod Mod4
 
-new_window pixel 2
+new_window none
 
 new_float normal
 
 hide_edge_borders none
 
 bindsym $mod+u border none
-bindsym $mod+y border pixel 2
+bindsym $mod+y border pixel 3
 bindsym $mod+n border normal
 
 font xft:Iosevka 12
 
 floating_modifier $mod
 
-bindsym $mod+Return exec urxvt
+bindsym $mod+Return exec alacritty
 
 #bindsym $mod+Control+g exec google-chrome-stable
 bindsym $mod+Control+p exec flameshot gui
@@ -28,21 +28,25 @@ bindsym $mod+F4 exec code-oss
 # Autostart applications
 exec --no-startup-id killall picom && sleep 1s &&  picom -b
 exec --no-startup-id nm-applet
-exec_always --no-startup-id /$HOME/.config/polybar/launch2.sh
+#exec_always --no-startup-id /$HOME/.config/polybar/mypolybarlaunch.sh
 exec_always --no-startup-id xrandr --output DVI-D-0 --mode 1920x1080
 exec_always --no-startup-id fcitx
 exec --no-startup-id variety
 exec_always --no-startup-id xmodmap ~/.xmodmap
 exec_always --no-startup-id qv2ray
 exec_always --no-startup-id yakuake
-
+exec_always --no-startup-id goldendict
 #exec --no-startup-id volumeicon
+exec_always --no-startup-id albert
+exec_always --no-startup-id xfce4-panel --disable-wm-check
+exec_always --no-startup-id xfsettingsd
+exec_always --no-startup-id compton
 
 # Window kill command
 bindsym $mod+Shift+z kill
 
 # start program launcher
-bindsym $mod+d exec --no-startup-id rofi -show run
+bindsym $mod+v exec --no-startup-id rofi -show run
 # bindsym $mod+d exec --no-startup-id "utools"
 
 # change focus
@@ -142,6 +146,8 @@ bindsym $mod+Shift+8 move container to workspace $ws8; workspace $ws8
 
 # assign [class="TelegramDesktop"] $ws5
 assign [class="firefox"] $ws3
+assign [class="electronic-wechat"] $ws8
+assign [class="deepin.com.qq.office"] $ws8
 # assign [class="Google-chrome"] $ws3
 # assign [class="netease-cloud-music"] $ws4
 # assign [class="jetbrains-clion"] $ws2
@@ -152,6 +158,7 @@ assign [class="firefox"] $ws3
 # Open specific applications in floating mode
 for_window [class="yakuake"] floating enable
 for_window [instance="QQ.exe"] floating enable
+for_window [class="electronic-wechat"] floating enable
 for_window [instance="QQ.exe"] border none
 for_window [title="alsamixer"] floating enable border pixel 1
 for_window [class="Calamares"] floating enable border normal
@@ -168,6 +175,9 @@ for_window [title="MuseScore: Play Panel"] floating enable
 for_window [class="Nitrogen"] floating enable sticky enable border normal
 for_window [class="Oblogout"] fullscreen enable
 for_window [class="octopi"] floating enable
+
+for_window [class="xfce4-panel"] floating enable
+
 for_window [title="About Pale Moon"] floating enable
 for_window [class="Pamac-manager"] floating enable
 for_window [class="Pavucontrol"] floating enable
@@ -248,7 +258,7 @@ client.background #1E272B
 
 # Gaps
 gaps inner 10
-gaps outer -4
+gaps outer 20
 
 smart_gaps on
 
@@ -295,6 +305,7 @@ exec --no-startup-id nm-applet
 #exec --no-startup-id xfce4-power-manager
 exec --no-startup-id pamac-tray
 exec --no-startup-id clipit
+exec --no-startup-id xfce4-notes
 
 # set power-manager and volume control
 exec --no-startup-id mate-power-manager
@@ -311,7 +322,7 @@ bindsym XF86TouchpadOff exec --no-startup-id synclient Touchpadoff=1
 #        status_command i3status
 #
 #}
-client.focused #EAD49B #c7f2e3 #1E272B #9D6A47 #9D6A47
+client.focused #EAD49B #78824B #1E272B #9D6A47 #9D6A47
 client.focused_inactive #EAD49B #1E272B #EAD49B #78824B #78824B
 client.unfocused #EAD49B #1E272B #EAD49B #9D6A47 #9D6A47
 client.urgent #EAD49B #1E272B #EAD49B #78824B #78824B

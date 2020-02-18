@@ -1,0 +1,17 @@
+[Desktop Entry]
+Name[zh_CN]=日志
+Name=Logs
+GenericName[zh_CN]=日志查看器
+GenericName=Log Viewer
+Comment[zh_CN]=查看系统详细的事件日志
+Comment=View detailed event logs for the system
+Keywords[zh_CN]=log;journal;debug;error;日志;记录;调试;错误;
+Keywords=log;journal;debug;error;
+Type=Application
+Categories=GTK;GNOME;System;Monitor;Utility;X-GNOME-Utilities;
+Exec=gnome-logs
+Icon=org.gnome.Logs
+Terminal=false
+StartupNotify=true
+DBusActivatable=true
+X-XFCE-Source=file:///usr/share/applications/org.gnome.Logs.desktop

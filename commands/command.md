@@ -69,7 +69,10 @@ export XMODIFIERS="@im=fcitx"
 ```
 sudo pacman -Sy yaourt yay
 sudo pacman -S archlinuxcn-keyring
-sudo pacman -S wiznote qtcreator visual-studio-code-bin make deepin.com.qq.office clang go electronic-wechat-git gbd flameshot google-chrome firefox dbeaver lightdm redshift deepin gnome alacritty compton variety rofi audacious teamviewer vlc vmware-workstation baidunetdisk telegram-desktop gimp anki filezilla foxit ranger zookeeper docker npm redis redis-desktop-manager nginx php tomcat8 apache maven simplescreenrecorder qv2ray v2ray tmux timeshift wechat-devtools wine polybar rxvt-unicode alsa-utils mate-power-manager
+sudo pacman -S wiznote qtcreator visual-studio-code-bin make deepin.com.qq.office clang go electronic-wechat-git gbd flameshot google-chrome firefox dbeaver lightdm redshift deepin gnome alacritty compton variety rofi audacious teamviewer vlc vmware-workstation baidunetdisk telegram-desktop gimp anki filezilla foxit ranger zookeeper docker npm redis redis-desktop-manager nginx php tomcat8 apache maven simplescreenrecorder qv2ray v2ray tmux timeshift wechat-devtools wine polybar rxvt-unicode alsa-utils mate-power-manager fzf  shellcheck urxvt 
+
+i3wm桌面下,下载deepin,xfce4,gnome桌面,本人爱好i3wm和xfce4结合起来,提升桌面美观度和效率.
+
 yay -Sy netease-cloud-music typora postman obs-Studio 
 
 sudo pacman -S wps-office-cn
