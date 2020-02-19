@@ -1,4 +1,4 @@
-break-countdown-seconds=2700
+break-countdown-seconds=1800
 lock-countdown-seconds=300
 postpone-countdown-seconds=120
 enabled=true
@@ -7,5 +7,5 @@ display-hours=false
 display-time=true
 display-icon=true
 allow-postpone=true
-auto-resume=true
+auto-resume=false
 

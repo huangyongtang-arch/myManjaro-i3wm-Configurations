@@ -29,8 +29,8 @@ trans = #00000000
 white = #FFFFFF
 black = #000000
 
-bg = #1F1F1F
-fg = #FFFFFF
+bg = #1E272B
+fg = #1E272B
 fg-alt = #A9ABB0
 
 acolor = #FFFFFF
@@ -38,11 +38,10 @@ curgent = #EF5350
 coccupied = #42A5F5
 
 
-
 shade1 = #212121
-shade2 = #424242
-shade3 = #616161
-shade4 = #757575
+shade2 = #9d6a47
+shade3 = #78824b
+shade4 = #d99f57
 shade5 = #9E9E9E
 shade6 = #BDBDBD
 shade7 = #D4D4D4
@@ -100,12 +99,12 @@ cursor-scroll = ns-resize
 
 tray-position = right
 tray-padding = 2
-tray-background= ${color.shade1}
+tray-background= ${color.bg}
 ;== Module Location ========================================================
 
 modules-left = workspaces  i3
 modules-center= date
-modules-right = volume battery  
+modules-right = battery  
  
 ;== Modules ========================================================
 
@@ -140,7 +139,7 @@ format-padding = 1
 icon-default = 
 
 format = <label-state> 
-format-background = ${color.shade2}
+format-background = ${color.shade3}
 label-active = 
 label-occupied = 
 label-urgent = 
@@ -227,11 +226,11 @@ time-format = %H:%M
 battery = BAT1
 adapter = AC
 format-charging = <animation-charging> <label-charging>
-format-charging-background = ${color.shade2}
+format-charging-background = ${color.shade4}
 format-charging-padding = 2
 label-charging = %percentage%%
 format-discharging = <ramp-capacity> <label-discharging>
-format-discharging-background = ${color.shade2}
+format-discharging-background = ${color.shade4}
 format-discharging-padding = 2
 label-discharging = %percentage%%
 format-full = <label-full>

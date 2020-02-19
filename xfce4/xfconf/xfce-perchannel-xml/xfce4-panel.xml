@@ -6,7 +6,7 @@
     <value type="int" value="2"/>
     <property name="panel-2" type="empty">
       <property name="position" type="string" value="p=8;x=960;y=1068"/>
-      <property name="size" type="uint" value="35"/>
+      <property name="size" type="uint" value="40"/>
       <property name="icon-size" type="uint" value="0"/>
       <property name="plugin-ids" type="array">
         <value type="int" value="19"/>
@@ -14,13 +14,26 @@
         <value type="int" value="20"/>
         <value type="int" value="5"/>
         <value type="int" value="21"/>
+        <value type="int" value="1"/>
+        <value type="int" value="16"/>
+        <value type="int" value="15"/>
+        <value type="int" value="12"/>
+        <value type="int" value="4"/>
+        <value type="int" value="3"/>
         <value type="int" value="25"/>
+        <value type="int" value="11"/>
+        <value type="int" value="10"/>
+        <value type="int" value="6"/>
+        <value type="int" value="9"/>
+        <value type="int" value="7"/>
+        <value type="int" value="8"/>
         <value type="int" value="27"/>
         <value type="int" value="22"/>
         <value type="int" value="24"/>
         <value type="int" value="31"/>
         <value type="int" value="30"/>
         <value type="int" value="35"/>
+        <value type="int" value="13"/>
         <value type="int" value="38"/>
       </property>
       <property name="mode" type="uint" value="0"/>
@@ -29,7 +42,7 @@
       <property name="disable-struts" type="bool" value="false"/>
       <property name="enter-opacity" type="uint" value="82"/>
       <property name="leave-opacity" type="uint" value="60"/>
-      <property name="background-style" type="uint" value="2"/>
+      <property name="background-style" type="uint" value="0"/>
       <property name="background-image" type="string" value="/home/tommy/.config/variety/Downloaded/wallhaven_wallhaven_cc_toplist/wallhaven-dgmke3.jpg"/>
       <property name="background-rgba" type="array">
         <value type="double" value="0.333333"/>
@@ -37,6 +50,7 @@
         <value type="double" value="0.325490"/>
         <value type="double" value="1.000000"/>
       </property>
+      <property name="length" type="uint" value="100"/>
     </property>
   </property>
   <property name="plugins" type="empty">
@@ -51,7 +65,12 @@
         <property name="background-color" type="string" value="#F7EB96"/>
       </property>
     </property>
-    <property name="plugin-5" type="string" value="tasklist"/>
+    <property name="plugin-5" type="string" value="tasklist">
+      <property name="show-labels" type="bool" value="false"/>
+      <property name="flat-buttons" type="bool" value="true"/>
+      <property name="switch-workspace-on-unminimize" type="bool" value="true"/>
+      <property name="grouping" type="uint" value="0"/>
+    </property>
     <property name="plugin-19" type="string" value="applicationsmenu">
       <property name="show-tooltips" type="bool" value="true"/>
     </property>
@@ -106,5 +125,60 @@
       <property name="base-directory" type="string" value="/data"/>
       <property name="hidden-files" type="bool" value="true"/>
     </property>
+    <property name="plugin-1" type="string" value="xfce4-time-out-plugin"/>
+    <property name="plugin-4" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="15820435471.desktop"/>
+      </property>
+    </property>
+    <property name="plugin-3" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="15820941392.desktop"/>
+      </property>
+    </property>
+    <property name="plugin-6" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="15820941673.desktop"/>
+      </property>
+    </property>
+    <property name="plugin-7" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="15820941975.desktop"/>
+      </property>
+    </property>
+    <property name="plugin-8" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="15820942476.desktop"/>
+      </property>
+    </property>
+    <property name="plugin-9" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="15820942807.desktop"/>
+      </property>
+    </property>
+    <property name="plugin-10" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="15820943108.desktop"/>
+      </property>
+    </property>
+    <property name="plugin-11" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="15820943819.desktop"/>
+      </property>
+    </property>
+    <property name="plugin-12" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="158209455311.desktop"/>
+      </property>
+    </property>
+    <property name="plugin-13" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="158209457712.desktop"/>
+      </property>
+    </property>
+    <property name="plugin-15" type="string" value="pulseaudio">
+      <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
+    </property>
+    <property name="plugin-16" type="string" value="xfce4-mpc-plugin"/>
   </property>
 </channel>
