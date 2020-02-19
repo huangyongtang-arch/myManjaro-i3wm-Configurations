@@ -226,11 +226,11 @@ time-format = %H:%M
 battery = BAT1
 adapter = AC
 format-charging = <animation-charging> <label-charging>
-format-charging-background = ${color.shade4}
+format-charging-background = ${color.shade2}
 format-charging-padding = 2
 label-charging = %percentage%%
 format-discharging = <ramp-capacity> <label-discharging>
-format-discharging-background = ${color.shade4}
+format-discharging-background = ${color.shade2}
 format-discharging-padding = 2
 label-discharging = %percentage%%
 format-full = <label-full>
@@ -321,8 +321,8 @@ type = internal/date
 interval = 30
 label =  %time%
 label-padding = 2
-label-background = ${color.shade2}
-time =  %Y-%m-%d %I:%M %p
+label-background = ${color.shade4}
+time =  %Y-%m-%d %A %I:%M %p
 ;time-alt =  %Y-%m-%d
 
 [module/powermenu]
