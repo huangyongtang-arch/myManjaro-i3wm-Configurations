@@ -2,8 +2,8 @@
 
 <channel name="xsettings" version="1.0">
   <property name="Net" type="empty">
-    <property name="ThemeName" type="string" value="Matcha-aliz"/>
-    <property name="IconThemeName" type="string" value="Papirus"/>
+    <property name="ThemeName" type="string" value="vimix-light"/>
+    <property name="IconThemeName" type="string" value="Papirus-Maia"/>
     <property name="DoubleClickTime" type="empty"/>
     <property name="DoubleClickDistance" type="empty"/>
     <property name="DndDragThreshold" type="empty"/>
@@ -37,6 +37,6 @@
     <property name="DecorationLayout" type="empty"/>
   </property>
   <property name="Gdk" type="empty">
-    <property name="WindowScalingFactor" type="empty"/>
+    <property name="WindowScalingFactor" type="int" value="1"/>
   </property>
 </channel>
